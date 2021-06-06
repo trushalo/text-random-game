@@ -1,1 +1,7 @@
+function pullQuest()
+  {
+  }
 
+let questArray=[
+
+]
