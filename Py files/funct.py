@@ -2,11 +2,11 @@
 
 import random
 import time
-from datetime import datetime
-
-import zpg_lists as zl
-
 # import json
+
+import kivy_local as kl
+import zpg_lists as zl
+from datetime import datetime
 
 '''Global functions:
 
@@ -97,7 +97,7 @@ def create_random_dict(keys, value_range) :
     A dictionary with random values for the given keys.
   """
 
-    random_dict = {}
+    random_dict = { }
     for key in keys :
         value = random.randint(*value_range)
         random_dict[key] = value
@@ -288,7 +288,7 @@ my_character = None
 def create_character_from_user_input() :
     """
     Creates an instance of Character based on user input.
-    
+
     Returns:
     An instance of Character in a global variable.
     """
