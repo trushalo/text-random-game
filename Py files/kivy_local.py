@@ -5,6 +5,9 @@ from kivy.uix.gridlayout import GridLayout
 
 Builder.load_file('kivy.kv')
 
+
+
+
 kivy_comment_1 = 'Stuff'
 kivy_comment_2 = 'Test'
 kivy_comment_3 = 'Whats'
@@ -17,9 +20,10 @@ class KivyApp(App):
     def build(self):
         return GridLayout()
 
+    def update_text(self, new_text):
+        self.my_text = new_text
 
-class MyGridLayout(GridLayout):
-    pass
+
 
 
 if __name__ == '__main__':
